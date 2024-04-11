@@ -1,0 +1,29 @@
+{% include "indexOrigin.html" %}
+
+<body>
+  <div class="container01">
+      <h1>Agende o Seu Corte</h1>
+      <form id="agendamentoForm" action="processar_agendamento.php" method="post">
+          <label for="nome">Nome do Cliente:</label>
+          <input type="text" id="nome" name="nome" required>
+          
+          <label for="dia">Dia:</label>
+          <input type="date" id="dia" name="dia" required>
+          
+          <label for="horario">Horário:</label>
+          <input type="time" id="horario" name="horario" required>
+          
+          <input type="submit" value="Finalizar Agendamento">
+      </form>
+  </div>
+  <div id="aviso" style="display:none;">Agendamento finalizado. Você será redirecionado em 3 segundos...</div>
+  <script>
+      document.getElementById("agendamentoForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Previne o envio padrão do formulário
+          document.getElementById("aviso").style.display = "block"; // Exibe o aviso
+          setTimeout(function() {
+              window.location.href = "homepage.html"; // Redireciona  homepage 3 segundos
+          }, 3000);
+      });
+  </script>
+</body>

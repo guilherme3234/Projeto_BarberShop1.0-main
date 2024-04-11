@@ -1,0 +1,59 @@
+{% include "indexOrigin.html" %}
+
+<body>
+    <br>
+    <br>
+    <h1>Escolha Com Quem Será Hoje:</h1> <br> <br>
+
+
+    <div class="containerr">
+        <div class="row">
+            <div class="box" onclick="location.href='valor.html';">
+                <img src="{{url_for('static', filename='./img/barbeiro1.jpg')}}" alt="Imagem 1">
+                <div class="info">
+                    <h2>João - Barber</h2>
+                    <p>Somente Corte Militar e Raspagem de Barba</p>
+                </div>
+            </div>
+            <div class="box" onclick="location.href='valor.html';">
+                <img src="{{url_for('static', filename='./img/barbeiro2.jpg')}}" alt="Imagem 2">
+                <div class="info">
+                    <h2>Augusto - Barber</h2>
+                    <p>Barba na Tesoura, Especializado em Cabelos Longos</p>
+                </div>
+            </div>
+            <div class="box" onclick="location.href='valor.html';">
+                <img src="{{url_for('static', filename='./img/barbeiro3.jpg')}}" alt="Imagem 3">
+                <div class="info">
+                    <h2>Gui Souza - Barber </h2>
+                    <p>Apenas Bigodes Finos e Cortes de Cria</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box" onclick="location.href='valor.html';">
+                <img src="{{url_for('static', filename='./img/barbeiro4.jpg')}}" alt="Imagem 4">
+                <div class="info">
+                    <h2>André - Barber</h2>
+                    <p>Tinge Cabelo, Maquininha e Barba</p>
+                </div>
+            </div>
+            <div class="box" onclick="location.href='valor.html';">
+                <img src="{{url_for('static', filename='./img/barbeiro5.jpg')}}" alt="Imagem 5">
+                <div class="info">
+                    <h2>Sumaré - Barber</h2>
+                    <p>Apenas o Calvou, Classico e Reverso</p>
+                </div>
+            </div>
+            <div class="box" onclick="location.href='valor.html';">
+                <img src="{{url_for('static', filename='./img/barbeiro6.jpg')}}" alt="Imagem 6">
+                <div class="info">
+                    <h2>BIG BEAR - Barber</h2>
+                    <p>Cortes Americanos, Classicos, Tranças e Barba Completa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "footer.html" %}
+</body>
+</html>
